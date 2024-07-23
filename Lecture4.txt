@@ -1,0 +1,507 @@
+Lecture 4 Part 1:
+
+HTML and JavaScript
+
+Welcome to Lecture 4 Part 1! In this session, we will explore the dynamic and interactive capabilities that JavaScript brings to HTML, enhancing the functionality and user experience of web pages.
+
+JavaScript in Action
+
+JavaScript plays an important role in making HTML pages more dynamic and interactive. Let's begin with a simple example that demonstrates the basics of JavaScript.
+
+Example: My First JavaScript
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JavaScript Example</title>
+  <script>
+    function displayDateTime() {
+      document.getElementById("demo").innerHTML = new Date();
+    }
+  </script>
+</head>
+<body>
+
+<button onclick="displayDateTime()">Click me to display Date and Time</button>
+<p id="demo"></p>
+
+</body>
+</html>
+
+In this example, we've introduced a button that, when clicked, triggers a JavaScript function (`displayDateTime`) to update the content of a paragraph with the current date and time.
+
+
+The HTML `<script>` Tag
+
+The HTML `<script>` tag is the gateway to incorporating client-side JavaScript into your web pages. It can either contain script statements directly or reference an external script file using the `src` attribute.
+
+Example
+
+<!DOCTYPE html>
+<html>
+<head>
+  <script>
+    document.getElementById("demo").innerHTML = "Hello JavaScript!";
+  </script>
+</head>
+<body>
+<p id="demo"></p>
+</body>
+</html>
+
+This script writes "Hello JavaScript!" into an HTML element with the id "demo."
+
+
+JavaScript Manipulation
+
+JavaScript provides a wide range of capabilities to manipulate HTML elements, styles, and attributes.
+
+Example
+
+Changing Content
+
+```javascript
+document.getElementById("demo").innerHTML = "Hello JavaScript!";
+```
+
+Changing Styles
+
+```javascript
+document.getElementById("demo").style.fontSize = "25px";
+document.getElementById("demo").style.color = "red";
+document.getElementById("demo").style.backgroundColor = "yellow";
+```
+
+Changing Attributes
+
+```javascript
+document.getElementById("image").src = "picture.gif";
+```
+
+The HTML `<noscript>` Tag
+
+The `<noscript>` tag allows you to define alternate content for users who have disabled scripts in their browsers or have browsers that don't support scripts.
+
+Example
+
+```html
+<script>
+  document.getElementById("demo").innerHTML = "Hello JavaScript!";
+</script>
+<noscript>Sorry, your browser does not support JavaScript!</noscript>
+```
+
+HTML Exercises
+
+Let's reinforce your learning with a hands-on exercise:
+
+Exercise
+
+Use JavaScript to change the HTML content of the `<p>` element to "Hello World!".
+
+<body>
+
+<p id="demo">Hi.</p>
+
+<script>
+  document.getElementById("demo").innerHTML = "Hello World!";
+</script>
+
+</body>
+
+Feel free to experiment and explore more JavaScript functionalities.
+
+HTML File Paths
+
+Understanding file paths is essential when linking to external files like images, style sheets, and scripts.
+
+Examples
+
+Absolute File Path
+
+```html
+<img src="https://www.example.com/images/picture.jpg" alt="Mountain">
+```
+
+Relative File Path
+
+```html
+<img src="images/picture.jpg" alt="Mountain">
+```
+
+The HTML `<head>` Element
+
+The `<head>` element serves as a container for metadata and includes essential elements like `<title>`, `<style>`, `<link>`, `<meta>`, `<script>`, and `<base>`.
+
+Example
+
+<head>
+  <title>A Meaningful Page Title</title>
+  <style>
+    body { background-color: powderblue; }
+    h1 { color: blue; }
+    p { color: red; }
+  </style>
+  <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+</head>
+
+
+Activity 14: 
+My First Spell - Creating a Magical Button
+
+Hello, future coders! Today, we're diving into the magical world of HTML and JavaScript. Buckle up for a fun-filled adventure where you'll get to be the sorcerer of the web!
+
+Goal
+Learn how to make a button that performs a spell (changes content) when clicked.
+
+Instructions
+1. Open a new document in your favorite text editor. 
+2. Copy the code below into your document:
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Magical Button</title>
+  <script>
+    function castSpell() {
+      document.getElementById("spellResult").innerHTML = "Abracadabra! 🎩✨";
+    }
+  </script>
+</head>
+<body>
+
+<button onclick="castSpell()">Click me to cast a spell</button>
+<p id="spellResult"></p>
+
+</body>
+</html>
+```
+
+3. Save your file with a name, like "activity14.html."
+4. Open your file with a web browser. Click the button, and witness the magic!
+
+Activity 15: 
+Styling Your Spellbook
+
+Goal
+Learn how to change the appearance of your spell with JavaScript.
+
+Instructions
+1. Open your "activity14.html" file in the text editor.
+2. Add the following code inside the `<script>` tag:
+
+```javascript
+document.getElementById("spellResult").style.fontSize = "20px";
+document.getElementById("spellResult").style.color = "purple";
+document.getElementById("spellResult").style.fontFamily = "cursive";
+```
+
+3. Save your file and refresh the browser. Notice how your spell now has a different style!
+
+
+Activity 16: 
+Creative Spell Casting
+
+Goal
+Create your spell by changing its content, style, and even adding an image!
+
+Instructions
+1. Open your "activity14.html" file.
+2. Experiment with changing the spell text, style, and try adding an image.
+
+```javascript
+function castCreativeSpell() {
+  document.getElementById("spellResult").innerHTML = "Wingardium Leviosa! 🪄";
+  document.getElementById("spellResult").style.fontSize = "25px";
+  document.getElementById("spellResult").style.color = "blue";
+  document.getElementById("spellResult").style.fontFamily = "fantasy";
+  document.getElementById("spellImage").src = "magic_wand.png"; // You can use any image URL
+}
+```
+3. Save your file and refresh the browser. Now, when you click the button, you'll unleash a completely unique spell!
+
+In this part of the lecture, we've explored the synergy between HTML and JavaScript. JavaScript empowers web pages with dynamic behavior, allowing for interactive user experiences. As we delve deeper into JavaScript in the next part, get ready to unlock more powerful features for your web development journey.
+Stay tuned for Part 2, where we'll delve into advanced JavaScript concepts and techniques. Happy coding!
+
+Lecture 4 Part 2: 
+
+HTML Computer Code Elements and Semantic Elements
+
+HTML Computer Code Elements
+
+HTML provides several elements for defining user input and computer code. Let's delve into these elements to enhance our understanding.
+
+The `<code>` Element
+
+The `<code>` element is used to define a piece of computer code. It displays content in the browser's default monospace font.
+
+Example
+```html
+<code>
+  x = 5;
+  y = 6;
+  z = x + y;
+</code>
+```
+Result:
+```
+x = 5;
+y = 6;
+z = x + y;
+```
+
+The `<kbd>` Element for Keyboard Input
+
+The `<kbd>` element defines keyboard input. The content inside is displayed in the browser's default monospace font.
+
+Example
+```html
+<p>Save the document by pressing <kbd>Ctrl + S</kbd></p>
+```
+Result:
+Save the document by pressing Ctrl + S
+
+The `<samp>` Element for Program Output
+
+The `<samp>` element is used to define sample output from a computer program. The content inside is displayed in the browser's default monospace font.
+
+Example:
+```html
+<p>Message from my computer:</p>
+<p><samp>File not found.<br>Press F1 to continue</samp></p>
+```
+Result:
+```
+Message from my computer:
+File not found.
+Press F1 to continue
+```
+
+The `<var>` Element for Variables
+
+The `<var>` element is used to define a variable in programming or in a mathematical expression. The content inside is typically displayed in italics.
+
+Example
+```html
+<p>The area of a triangle is: 1/2 x <var>b</var> x <var>h</var>, where <var>b</var> is the base, and <var>h</var> is the vertical height.</p>
+```
+Result:
+The area of a triangle is: 1/2 x b x h, where b is the base, and h is the vertical height.
+
+The `<pre>` Element for Preserving Whitespace
+
+The `<pre>` element can be used to preserve extra whitespace and line-breaks in the `<code>` element.
+
+Example
+```html
+<pre>
+  <code>
+    x = 5;
+    y = 6;
+    z = x + y;
+  </code>
+</pre>
+```
+Result:
+```
+x = 5;
+y = 6;
+z = x + y;
+```
+
+HTML Semantic Elements
+
+Semantic elements in HTML provide meaning to both browsers and developers. They contribute to a clearer structure and understanding of the content.
+
+The `<section>` Element
+
+The `<section>` element defines a thematic grouping of content, typically with a heading. It is suitable for chapters, introductions, news items, and contact information.
+
+Example
+```html
+<section>
+  <h1>WWF</h1>
+  <p>The World Wide Fund for Nature (WWF) is an international organization working on issues regarding the conservation, research, and restoration of the environment, formerly named the World Wildlife Fund. WWF was founded in 1961.</p>
+</section>
+
+<section>
+  <h1>WWF's Panda symbol</h1>
+  <p>The Panda has become the symbol of WWF. The well-known panda logo of WWF originated from a panda named Chi Chi that was transferred from the Beijing Zoo to the London Zoo in the same year of the establishment of WWF.</p>
+</section>
+```
+
+The `<article>` Element
+
+The `<article>` element specifies independent, self-contained content. It is suitable for forum posts, blog posts, user comments, product cards, and newspaper articles.
+
+Example
+```html
+<article>
+  <h2>Google Chrome</h2>
+  <p>Google Chrome is a web browser developed by Google, released in 2008. Chrome is the world's most popular web browser today!</p>
+</article>
+
+<article>
+  <h2>Mozilla Firefox</h2>
+  <p>Mozilla Firefox is an open-source web browser developed by Mozilla. Firefox has been the second most popular web browser since January 2018.</p>
+</article>
+
+<article>
+  <h2>Microsoft Edge</h2>
+  <p>Microsoft Edge is a web browser developed by Microsoft, released in 2015. Microsoft Edge replaced Internet Explorer.</p>
+</article>
+```
+
+The `<header>`, `<footer>`, and `<nav>` Elements
+
+- The `<header>` element represents a container for introductory content or a set of navigational links.
+- The `<footer>` element defines a footer for a document or section.
+- The `<nav>` element defines a set of navigation links.
+
+Example
+```html
+<article>
+  <header>
+    <h1>What Does WWF Do?</h1>
+    <p>WWF's mission:</p>
+  </header>
+  <p>WWF's mission is to stop the degradation of our planet's natural environment and build a future in which humans live in harmony with nature.</p>
+  <footer>
+    <p>Author: Hege Refsnes</p>
+    <p><a href="mailto:hege@example.com">hege@example.com</a></p>
+  </footer>
+  <nav>
+    <a href="/html/">HTML</a> |
+    <a href="/css/">CSS</a> |
+    <a href="/js/">JavaScript</a> |
+    <a href="/jquery/">jQuery</a>
+  </nav>
+</article>
+```
+
+The `<aside>` Element
+
+The `<aside>` element defines content aside from the page content, like a sidebar. It should be indirectly related to the surrounding content.
+
+Example
+```html
+<p>My family and I visited The Epcot center this summer. The weather was nice, and Epcot was amazing! I had a great summer together with my family!</p>
+
+<aside>
+  <h4>Epcot Center</h4>
+  <p>Epcot is a theme
+
+Activity 17: 
+
+Code Adventure - Adding Calculator
+Today, we'll explore a simple function in programming and create our own adding calculator using HTML code elements.
+
+you will create a simple calculator using HTML and JavaScript. The calculator should be able to add any two numbers together and display the result when the "=" button is clicked.
+
+Instructions:
+
+Open your preferred code editor or use an online HTML editor.
+Create an HTML document with the following elements:
+Two input fields for entering the numbers to be added.
+A button labeled "+" to trigger the addition.
+An input field to display the result.
+Style the calculator using CSS to make it visually appealing and user-friendly.
+Write JavaScript code to perform the addition when the "+" button is clicked:
+Retrieve the values entered in the input fields.
+Convert the values to numbers (use parseFloat or parseInt).
+Add the two numbers together.
+Display the result in the result input field.
+Test your calculator by entering different numbers and verifying that the correct result is displayed.
+Optionally, add error handling to handle invalid input (e.g., non-numeric input).
+Save your HTML file and open it in a web browser to ensure it works as expected.
+If you're feeling adventurous, consider adding additional functionality such as subtraction, multiplication, and division.
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ 
+    }
+    input[type="text"] {
+      width: calc(100% - 20px);
+      margin-bottom: 10px;
+    }
+    input[type="button"] {
+      width: 45px;
+      height: 45px;
+      margin: 5px;
+      font-size: 18px;
+    }
+  </style>
+</head>
+<body>
+
+<div class="calculator">
+<script>
+  function calculate() {
+    // Get the input values
+    var num1 = parseFloat(document.getElementById("num1").value);
+    var num2 = parseFloat(document.getElementById("num2").value);
+
+</body>
+</html>
+
+
+Write your code in the provided space and watch the magic happen. Happy coding! 
+
+
+Activity 18:
+What have you learned?
+
+
+What does the HTML `<var>` element represent?
+Keyboard input
+Program output
+Variables
+Computer code
+Which HTML element defines a set of navigation links?
+`<nav>`
+`<header>`
+`<footer>`
+`<section>`
+What is the purpose of the HTML `<figcaption>` element?
+Define a footer for a document
+Define a caption for a `<figure>` element
+Define a variable in programming
+Define a piece of computer code
+How can you preserve extra whitespace and line-breaks inside an HTML `<code>` element?
+Use the `<pre>` element
+Apply the `preserve` attribute
+Indent the code with spaces
+Wrap the code in double curly braces
+Which HTML element is used to display sample output from a computer program?
+`<kbd>`
+`<samp>`
+`<code>`
+`<var>`
+What is the purpose of the HTML `<section>` element?
+Define a container for introductory content
+Specify independent, self-contained content
+Define a set of navigation links
+Define a thematic grouping of content
+In HTML, what should you use to include the language of the web page in the `<html>` tag?
+`<language>`
+`<lang>`
+`<locale>`
+`<meta>`
+The `<head>` element can be omitted in an HTML document without causing any issues.
+True
+False
+The `<article>` element is suitable for grouping content like forum posts, blog posts, and newspaper articles.
+True
+False
+The `<aside>` element is used to define content that is directly related to the surrounding content.
+True
+False
