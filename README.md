@@ -3,8 +3,8 @@ This repository offers educational resources for grade 3 and 4 students (8-10 ye
 
 ### README.md
 
-## Live Deployment
-Check out our live demo: [Coding and Robotics](https://sites.google.com/view/riliscientistslabportfolio/home)
+## Deployment
+Check out the demo: [Coding and Robotics](https://sites.google.com/view/riliscientistslabportfolio/home)
 
 ## End-User Functionality
 - **Interactive Lessons**: Step-by-step tutorials designed to teach basic coding concepts using HTML and basic JavaScript.
