@@ -1,0 +1,319 @@
+Lecture 1 Part 1:
+
+In this lecture, we will introduce HTML, focusing on creating a basic webpage structure. You will learn about HTML tags, including <!DOCTYPE HTML>, <html>, <head>, <title>, <body>, <h1>, <p>, and the importance of opening and closing tags. 
+
+Intro to HTML:
+
+HTML stands for Hyper Text Markup Language
+It describes all the headings, paragraphs and images that make up a website
+
+We have to start by creating a tab. We can do this by typing <!DOCTYPE HTML> 
+This lets the web browser know that the page is written in the programming language HTML
+the  (less than and greater than)"< and >" symbols are apart of the HTML syntax to define tags.
+
+Start off by telling the browser that this is an HTML document. We can do this by putting in an opening an closing tag <html> and </html>. (most tags must have an opening and closing part)
+
+Next we have the <head> tag. This is where the important things are processed first. The closing tag for this is </head>
+
+The <body> tag is the tag that contains all the website content. This goes after the <head> tag. The closing tag for body is </body>
+
+You can notice a pattern here. Each beginning tag starts with a < and ends with >. We can also see that every ending tag has the same symbols but has a / symbol right after the <. This / tells us that it is an end tag. 
+
+The <title> </title> tag is used to put in a title. All the content must go BETWEEN the opening and closing tags. An example is <title> Introduction to HTML </title>
+
+The <h1> </h1> tag is a header tag. You can write your heading for your paragraph here. There are many different heading tags. We will explore them later. 
+
+The p tag defines a paragraph. <p>This is a paragraph.</p> A paragraph always starts on a new line, and browsers automatically add some white space (a margin) before and after a paragraph.
+
+You should always add comments to your code. This will make it easier for yourself and others to read what you have coded. 
+
+ <!-- This is a comment. my computer will not display this -- >.
+
+ The computer reads whatever is in between this <!-- -- > a sa comment. That means that you can see it, and whoever is reading your code can see it but your computer WILL NOT display it as output. 
+
+
+Don't forget to save your file! All HTML files must be saved as a .html file (dot h t m l) 
+
+Here is a rough outline of what an HTML document should look like:
+
+<!DOCTYPE HTML>
+<html> 
+<head>
+<title>
+</title>
+</head>
+<body>
+<h1>
+</h1>
+<p>
+</p>
+</body>
+</html>
+
+Activity 1: 
+Quiz: What have you learned?
+
+What does HTML stand for?
+Head Text Mending Language
+Hyper Text Markup Language
+Heading Team Markup Lead
+Head Tree Markup Learning
+Every Opening tag must have a closing tag
+True
+False
+Select the correct format of an opening and closing tag:
+(title) (/title)
+<title> </title>
+<<title>> <<!title>>
+<(title)> </title>
+The ending tag for <body> is <!body>
+True
+False
+What does <p> tag tell us?
+It defines a paragraph
+It defines a new page
+It defines a colour-changing tag
+It starts the code
+The <h1> tag is a header tag. There are many different header tags
+True 
+False
+What must an HTML file be saved as?
+.code
+.html
+.htlm
+.web
+Where does content go with respect to an opening and closing tag?
+Before the opening tag
+After the closing tag
+You do not put in any content 
+The content goes between the opening and closing tags. 
+HTML describes all the headings, paragraphs and images that make up a website
+True 
+False
+What lets the web browser know that the page is written in the programming language HTML?
+<html>
+<!DOCTYPE HTML>
+<!DOCUMENTTYPE HTML>
+<!TYPE HTML>
+
+Activity 2:
+Let's create a website!
+Topic: introduce yourself
+Instructions:
+Create a file called Activity2.html
+Your website must have a title. For this activity, this should be your full name
+Your website must have a heading. For this activity, this should be called “About me”
+Your website must have ONE body paragraph. 
+Things you can talk about: 
+your favourite food
+your favourite movie
+Your favourite colour
+Do you have any pets? What is the pet? What is its name?
+End with “I Love Coding!”
+
+
+My example for this:
+
+<!DOCTYPE HTML>
+<html> 
+<head>
+<title>
+Iron Man
+</title>
+</head>
+<body>
+<h1>
+About me!
+</h1>
+My name is Iron Man! My favourite colour is green. My favourite movie is Iron Man. I love Pasta! I do not have any pets. I Love Coding!
+</body>
+</html>
+
+You will notice that the website is very basic. The text is black and the background is white. You can see the title on the top of the tab. 
+
+How to do your assignment:
+On the search bar search for Notepad or Notepad++ and use whichever one your computer has downloaded. 
+
+
+Lecture 1 Part 2:
+Building on the previous lecture, this part will introduce additional HTML tags, including <img> for images, <ul> and <li> for unordered lists, <ol> for ordered lists, <b> for bold text, <em> for italic emphasis, <u> for underlining, and <a> for hyperlinks. 
+
+HTML:
+
+Let's continue with the template that we learned about and created in the last lecture:
+
+<!DOCTYPE HTML>
+<html> 
+<head>
+<title>
+</title>
+</head>
+<body>
+<h1>
+</h1>
+</body>
+</html>
+
+We will be adding and learning about more tags.
+
+Images
+We can add an image to the website. This is done by using the tag <img src=>
+
+This tag means Image Source. Src (source) defines the location of an image. This can be a google link or something saved in your computer. 
+
+We will use an image from the internet. https://thepracticaldev.s3.amazonaws.com/i/kfyk4ne0vb187mhh1o95.jpg
+
+The way we would format this is: 
+<img src=https://thepracticaldev.s3.amazonaws.com/i/kfyk4ne0vb187mhh1o95.jpg>
+
+We can insert this anywhere between our body tags. 
+
+Lists:
+To create a list, we can use the <ul> and <li> tags: UL stands for Unordered list and li stand for list. You can add as many <li> tags between the <ul> </ul> tags. 
+The format goes:
+	<ul>
+		<li> </li>
+		<li> </li>
+		<li> </li>
+	</ul>
+The <ol> tag defines an ordered list. An ordered list can be numerical or alphabetical.
+	<ol>
+		<li> </li>
+		<li> </li>
+		<li> </li>
+	</ol>
+We can make a list start at any number we want using start= inside out ol tag: <ol start="10">
+
+Two different ordered lists (the first list starts at 1, and the second starts at 10):
+
+<ol>
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
+</ol>
+
+<ol start="10">
+  <li>Coffee</li>
+  <li>Tea</li>
+  <li>Milk</li>
+</ol>
+
+Typographical emphasis:
+When adding typographical emphasis to a word, sentence or paragraph, the part you want the emphasis on MUST be BETWEEN the tags. 
+
+We can make a word or sentence bold by simply adding in the bold tag. <b> </b>
+We can add italic emphasis to a word by adding in the em tag <em> </em>
+We can underline text using the underline tag. <u> </u>
+
+The anchor tag: <a> </a>. It defines a hyperlink. A hyperlink we used to link one page to another. The anchor tag comes with the href=“” attribute. This specifies the URL of the page the link goes to when clicked on. The link we will look at is: https://uregina.ca/~frf706/ 
+
+If we want the link to open in a new tab instead of the same one we would need to put in a target. Target specifies where the page will open. 
+<p>Visit my website: <a href="https://uregina.ca/~frf706/" target="_blank">https://uregina.ca/~frf706/</a></p>
+this means that my link will be opened up in a new tab.
+
+<!DOCTYPE HTML>
+<html> 
+<head>
+<title>
+</title>
+</head>
+<body>
+<h1>
+</h1>
+<img src=>
+		<ul>
+			<li> </li>
+			<li> </li>
+		</ul>
+<ol>
+<li> </li>
+<li> </li>
+</ol>
+<ol start="10">
+ 	<li> </li>
+<li> </li>
+</ol>
+<a href=“”>  </a>
+</body>
+</html>
+Activity 3:
+Quiz: What have you learned?
+
+What does img src stand for?
+Image Source
+Image search
+Imagery Search
+Imagery Source
+Src defines the location of an image:
+True
+False
+What is the tag for an Ordered List?
+<ul>
+<ol>
+<orderedlist>
+<olist>
+What is the tag for an Unordered List?
+<ul>
+<ol>
+<unorderedlist>
+<u>
+You can start an ordered list from any number you want:
+True 
+False
+An ordered list can have numbers and letters:
+True 
+False
+When adding typographical emphasis to a word, sentence or paragraph, the part you want the emphasis on MUST NOT be BETWEEN the tags:
+True
+False
+What is the tag for Underline?
+<o>
+<underline>
+<u>
+<ul>
+A hyperlink is used for:
+Defining a list
+Linking two pages together
+Reloading a page
+Changing the colour of the background
+What does the target tag do in terms of href?
+Links the page to another page
+Tells us who the target for the website is
+Specifies what colour the page will be
+Specifies where the page will open.
+
+Activity 4:
+Let's create another website!
+Topic: Create a webpage with text, images, lists, and hyperlinks.
+Instructions:
+Create a file called Activity4.html
+Your website must have a title. For this activity, this should be your full name
+Your website must have 6 headings. 
+Play around with the heading tags. Use h1, h2, h3,h4, h5 and h6. There are 6 levels to a heading tag.
+Your website must have ATLEAST ONE paragraph. 
+Things you can talk about: 
+your favourite this about HTML
+your favourite tag
+Do you know about any other coding languages?
+Your Activity must include:
+Your Full name Bolded, italicized and underlined. 
+Like this: Iron Man
+An unordered list with 5 points
+An ordered list with 5 points 
+An ordered list starting at 100 with 5 points
+An image. Use this : https://thepracticaldev.s3.amazonaws.com/i/kfyk4ne0vb187mhh1o95.jpg
+A hyperlink which opens on a new tab. Use this: https://uregina.ca/~frf706/ 
+Things you can add in your lists:
+Car names
+Names of cities
+Names of countries
+Names of animals
+Names of foods
+Names of plants
+Names of fruits and vegetables
+In this lesson, you learned how to build a simple webpage using a coding language called HTML. We talked about different HTML tags, which are like special commands.
+You learned about tags like <!DOCTYPE HTML>, <html>, <head>, <title>, <body>, <h1>, and <p>. These are like building blocks that help you create different parts of a webpage, such as titles, paragraphs, and headings.
+We even had a little quiz to check if you remembered the important things, like how to use tags and what HTML is for.
+In the next part, we added more cool things! We talked about adding pictures with <img>, making lists with <ul> and <ol>, and making text bold <b>, italic <em>, and underlined <u>. We also learned about making links with <a> and how to make them open in a new tab.
+So, now you know how to make a simple webpage and make it look even cooler with pictures, lists, and special text. Great job!
+In the next lesson, we will explore the fascinating world of HTML styling and formatting, taking our coding skills to the next level! We’re going to build on what we've learned so far, and discover how to make our web pages look even cooler by adding colours, changing fonts, and experimenting with different text styles. We'll introduce advanced techniques like defining smaller text with the `<small>` element, marking or highlighting text with `<mark>`, and even including deleted or inserted text using `<del>` and `<ins>`. We will also explore subscript and superscript text with `<sub>` and `<sup>`. You'll also learn how to quote and cite with `<blockquote>` and `<q>`.
