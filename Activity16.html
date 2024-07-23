@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Magical Button</title>
+
+  <style>
+
+    /* Add CSS styles here if needed */
+
+  </style>
+
+</head>
+
+<body>
+
+<button id="magicButton" onclick="castCreativeSpell()">Click me to cast a creative spell</button>
+
+<p id="spellResult"></p>
+
+<img id="spellImage" src="" alt="Magic Spell Image">
+
+<script>
+
+  function castCreativeSpell() {
+
+    document.getElementById("spellResult").innerHTML = "Wingardium Leviosa! 🪄";
+
+    document.getElementById("spellResult").style.fontSize = "25px";
+
+    document.getElementById("spellResult").style.color = "blue";
+
+    document.getElementById("spellResult").style.fontFamily = "fantasy";
+
+    document.getElementById("spellImage").src = "https://media.istockphoto.com/id/502896185/photo/spell-book.jpg?s=612x612&w=0&k=20&c=1eFSEDqBO_wV4sTx_ZHopg5FGnuxF1OBiZ7Lz2gw-EM="; // Provided image address
+
+  }
+
+</script>
+
+</body>
+
+</html>
