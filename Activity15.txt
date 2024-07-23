@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Magical Button</title>
+
+  <style>
+
+    /* Add CSS styles here if needed */
+
+  </style>
+
+</head>
+
+<body>
+
+<button id="magicButton" onclick="castSpell()">Click me to cast a spell</button>
+
+<p id="spellResult"></p>
+
+<script>
+
+  function castSpell() {
+
+    var spellResult = document.getElementById("spellResult");
+
+    spellResult.innerHTML = "Abracadabra! 🎩✨";
+
+    
+
+    // Apply styling to the spell result
+
+    spellResult.style.fontSize = "20px";
+
+    spellResult.style.color = "purple";
+
+    spellResult.style.fontFamily = "cursive";
+
+  }
+
+</script>
+
+</body>
+
+</html>
