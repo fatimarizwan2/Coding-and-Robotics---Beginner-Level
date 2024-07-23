@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Styled Table</title>
+
+  <style>
+
+    /* Table styling */
+
+    table {
+
+      width: 100%;
+
+      border-collapse: collapse;
+
+      border: 2px solid #333;
+
+      border-radius: 8px;
+
+      overflow: hidden;
+
+      font-family: Arial, sans-serif;
+
+    }
+
+    
+
+    th, td {
+
+      padding: 12px;
+
+      text-align: center;
+
+      border-bottom: 1px solid #ddd;
+
+    }
+
+    
+
+    th {
+
+      background-color: #4CAF50;
+
+      color: white;
+
+    }
+
+    
+
+    tr:nth-child(even) {
+
+      background-color: #f2f2f2;
+
+    }
+
+    
+
+    tr:hover {
+
+      background-color: #ddd;
+
+    }
+
+    
+
+    /* Cell content styling */
+
+    .red {
+
+      color: red;
+
+    }
+
+    
+
+    .blue {
+
+      color: blue;
+
+    }
+
+    
+
+    .green {
+
+      color: green;
+
+    }
+
+  </style>
+
+</head>
+
+<body>
+
+<!-- Table with 5 rows and 3 columns -->
+
+<table>
+
+  <caption>My Styled Table</caption>
+
+  <thead>
+
+    <tr>
+
+      <th>Column 1</th>
+
+      <th>Column 2</th>
+
+      <th>Column 3</th>
+
+    </tr>
+
+  </thead>
+
+  <tbody>
+
+    <tr>
+
+      <td class="red">Red</td>
+
+      <td class="blue">Blue</td>
+
+      <td class="green">Green</td>
+
+    </tr>
+
+    <tr>
+
+      <td class="blue">Blue</td>
+
+      <td class="green">Green</td>
+
+      <td class="red">Red</td>
+
+    </tr>
+
+    <tr>
+
+      <td class="green">Green</td>
+
+      <td class="red">Red</td>
+
+      <td class="blue">Blue</td>
+
+    </tr>
+
+    <tr>
+
+      <td class="red">Red</td>
+
+      <td class="green">Green</td>
+
+      <td class="blue">Blue</td>
+
+    </tr>
+
+    <tr>
+
+      <td class="blue">Blue</td>
+
+      <td class="red">Red</td>
+
+      <td class="green">Green</td>
+
+    </tr>
+
+  </tbody>
+
+</table>
+
+</body>
+
+</html>
