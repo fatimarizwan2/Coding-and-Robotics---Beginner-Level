@@ -1,0 +1,305 @@
+Lecture 2 Part 1: 
+
+In this lesson, we are going to learn about adding colours, changing fonts, and making your webpage look fantastic. Get ready to explore properties like background-color, font-family, and font-size, along with special tricks like bold text, italics, and more!
+HTML Styling and Formatting
+
+Introduction:
+Welcome back, young coders! In our previous lesson, we explored the basics of HTML, created a simple webpage, and learned about the essential tags. Today, we'll delve into the exciting world of styling and formatting with HTML.
+
+HTML Style Attribute:
+
+In HTML, the style attribute is used to add styles to an element, such as colour, font, size, and more. The syntax is as follows:
+
+<tagname style="property: value;">
+
+
+Let's look at some examples:
+
+** we have to keep a very important factor in mind. This is that in canada, we spell “Colour” with a “u”, however, the HTML coding language DOES NOT use that rule. So, whenever we spell “colour” while coding, we will spell it without the “u” and will spell it as “color”
+
+Background Colour:
+
+The `background-color` property defines the background color for an HTML element.
+
+<body style="background-color: powderblue;">
+
+<h1>This is a heading</h1>
+<p>This is a paragraph.</p>
+
+</body>
+
+You can also set background color for different elements:
+<body>
+<h1 style="background-color: powderblue;">This is a heading</h1>
+<p style="background-color: tomato;">This is a paragraph.</p>
+</body>
+
+Text Color:
+
+The `color` property defines the text color for an HTML element.
+
+html
+<h1 style="color: blue;">This is a heading</h1>
+<p style="color: red;">This is a paragraph.</p>
+
+Fonts:
+
+The `font-family` property defines the font to be used for an HTML element.
+
+html
+<h1 style="font-family: verdana;">This is a heading</h1>
+<p style="font-family: courier;">This is a paragraph.</p>
+
+Text Size:
+
+The `font-size` property defines the text size for an HTML element.
+
+html
+<h1 style="font-size: 300%;">This is a heading</h1>
+<p style="font-size: 160%;">This is a paragraph.</p>
+
+Text Alignment:
+
+The `text-align` property defines the horizontal text alignment for an HTML element.
+
+html
+<h1 style="text-align: center;">Centered Heading</h1>
+<p style="text-align: center;">Centered paragraph.</p>
+
+HTML Formatting Elements:
+
+HTML provides special formatting elements for different types of text. Let's explore some of them:
+
+`<b>` - Bold text
+`<strong>` - Important text
+`<i>` - Italic text
+`<em>` - Emphasized text
+`<mark>` - Marked text
+`<small>` - Smaller text
+`<del>` - Deleted text
+`<ins>` - Inserted text
+`<sub>` - Subscript text
+`<sup>` - Superscript text
+
+HTML Block Elements:
+
+`<blockquote>` for Quotations
+`<q>` for Short Quotations
+`<abbr>` for Abbreviations
+`<address>` for Contact Information
+`<cite>` for Work Title
+`<bdo>` for Bi-Directional Override
+
+Activity 5:
+What have you learned?
+
+What HTML attribute is used to add styles to an element, such as color, font, and size?
+`style’
+`format`
+`design`
+ `layout`
+
+Which property defines the background color for an HTML element?
+`text-color` 
+`color`
+`background-color`
+`background`
+
+In the following code, what colour is set for the heading?  
+<h1 style="color: blue;">This is a heading</h1>
+Green
+Blue
+Red
+Yellow
+
+What property defines the font to be used for an HTML element?
+`font-type`
+`font-family`
+`text-font`
+`font-style`
+
+In the code below, what does the `300%` value represent? 
+<h1 style="font-size: 300%;">This is a heading</h1>
+Font color
+Font size
+Font weight
+Font style
+
+Which property defines the horizontal text alignment for an HTML element?
+‘Text-align`
+`align-text`
+`horizontal-align`
+`text-position`
+
+What does the `<sub>` element represent in HTML?
+Superscript text
+Subscript text
+Smaller text
+Important text
+
+
+The `<ins>` element in HTML is used for inserted text.
+True
+False
+
+Match the HTML element to its function : `<mark>`
+Smaller text
+Deleted text
+Important text
+Marked text
+
+Activity 6: 
+A Webpage!
+
+Now, let's put our knowledge into practice. 
+Create a file called Activity6.html. 
+Design a webpage using various styling elements we've learned. 
+Include 
+headings 
+paragraphs
+lists
+Images
+Hyperlinks
+Experiment with different styles to make your webpage visually appealing.
+
+
+Lecture 2 Part 2: 
+
+In this lesson, we will discover elements like <small> for smaller text and <mark> to highlight words. We will also learn about deleted text and inserted text, as well as subscript and superscript text. Then we will explore quotations with <blockquote> and short quotes with <q> and learn about abbreviations using <abbr> and creative work titles with <cite>. 
+
+HTML Advanced Styling and Formatting
+
+Let's explore more advanced techniques and dive into additional formatting elements.
+
+HTML Advanced Formatting Elements:
+
+`<small>` Element:
+The `<small>` element defines smaller text.
+Example
+<small>This is some smaller text.</small>
+
+
+`<mark>` Element:
+The `<mark>` element defines text that should be marked or highlighted.
+Example:
+<p>Do not forget to buy <mark>milk</mark> today.</p>
+
+
+`<del>` and `<ins>` Elements:
+- The `<del>` element defines text that has been deleted from a document.
+- The `<ins>` element defines a text that has been inserted into a document.
+
+Example:
+<p>My favorite color is <del>blue</del> red.</p>
+<p>My favorite color is <del>blue</del> <ins>red</ins>.</p>
+
+
+`<sub>` and `<sup>` Elements:
+- The `<sub>` element defines subscript text.
+- The `<sup>` element defines superscript text.
+
+Example:
+<p>This is <sub>subscripted</sub> text.</p>
+<p>This is <sup>superscripted</sup> text.</p>
+
+
+Quotation and Citation Elements:
+
+`<blockquote>` for Quotations:
+The `<blockquote>` element defines a section quoted from another source.
+Example:
+
+<p>Here is a quote from WWF's website:</p>
+<blockquote cite="http://www.worldwildlife.org/who/index.html">
+For 60 years, WWF has worked to help people and nature thrive. As the world's leading conservation organization, WWF works in nearly 100 countries. At every level, we collaborate with people around the world to develop and deliver innovative solutions that protect communities, wildlife, and the places in which they live.
+</blockquote>
+
+
+`<q>` for Short Quotations:
+The `<q>` tag defines a short quotation.
+
+Example:
+<p>WWF's goal is to: <q>Build a future where people live in harmony with nature.</q></p>
+
+
+Other Formatting Elements:
+
+`<abbr>` for Abbreviations:
+The `<abbr>` tag defines an abbreviation or an acronym.
+Example:
+<p>The <abbr title="World Health Organization">WHO</abbr> was founded in 1948.</p>
+
+
+`<cite>` for Work Title:
+The `<cite>` tag defines the title of a creative work.
+Example:
+<p><cite>The Scream</cite> by Edvard Munch. Painted in 1893.</p>
+
+
+Activity 7
+What did you learn?
+
+What does the `<small>` element in HTML define? 
+Larger text   
+Smaller text  
+Bold text  
+Italic text  
+
+Which element is used to highlight or mark text in HTML?  
+`<highlight>` 
+ `<mark>`  
+`<emphasis>`  
+`<strong>`  
+
+What is the purpose of the `<del>` element in HTML?  
+Inserted text  
+Subscript text  
+Superscript text  
+Deleted text  
+
+Which HTML element defines subscript text? 
+`<sub>`  
+`<sup>`  
+`<subscript>`  
+`<baseline>`  
+
+What does the `<blockquote>` element do in HTML?  
+Defines bold text  
+Defines a section quoted from another source  
+Defines italic text  
+Defines an ordered list  
+
+Which attribute is used with the `<abbr>` tag to provide a description? 
+`title`  
+`description`  
+`desc`  
+`info`  
+
+The `<cite>` tag in HTML is used for: 
+Abbreviations   
+Work title  
+Bi-Directional Override  
+Highlighted text  
+
+The `<mark>` element in HTML is used for smaller text. 
+True   
+False  
+
+The `<q>` tag in HTML is used for long quotations. 
+True 
+False  
+
+Match the HTML element to its function: `<sup>`  
+Smaller text  
+Deleted text   
+Inserted text  
+Superscript text
+
+Activity 8: 
+Apply Your Knowledge!
+
+Now it's time for hands-on practice. Create a file called Activity8.html and design a webpage using the advanced styling and formatting elements we've covered. Experiment with different combinations to enhance the visual appeal of your webpage.
+
+We learned a lot of new things in this lesson. First, we learned the basics, like changing colors and fonts using special commands. Then, we went even further, discovering secrets like making text smaller with <small>, highlighting words with <mark>, and showing when words are added or taken away using <del> and <ins>. We also found out about special ways to write quotes and abbreviations. Now, we can make our webpages different and fun! 
+
+Great job on progressing to more advanced HTML formatting! In our next lesson, we'll introduce Cascading Style Sheets (CSS) to take your styling skills to the next level.
