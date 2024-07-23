@@ -3,8 +3,6 @@ This repository offers educational resources for grade 3 and 4 students (8-10 ye
 
 ### README.md
 
-# Coding and Robotics - Beginner Level
-
 ## Live Deployment
 Check out our live demo: [Coding and Robotics](https://sites.google.com/view/riliscientistslabportfolio/home)
 
