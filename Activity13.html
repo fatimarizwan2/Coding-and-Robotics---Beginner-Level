@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Responsive Table Design</title>
+
+  <style>
+
+    /* Base table styles */
+
+    table {
+
+      width: 100%;
+
+      border-collapse: collapse;
+
+      border: 2px solid #333;
+
+      border-radius: 8px;
+
+      overflow: hidden;
+
+      font-family: Arial, sans-serif;
+
+    }
+
+    
+
+    th, td {
+
+      padding: 12px;
+
+      text-align: center;
+
+      border-bottom: 1px solid #ddd;
+
+    }
+
+    
+
+    th {
+
+      background-color: #4CAF50;
+
+      color: white;
+
+    }
+
+    
+
+    tr:nth-child(even) {
+
+      background-color: #f2f2f2;
+
+    }
+
+    
+
+    tr:hover {
+
+      background-color: #ddd;
+
+    }
+
+    
+
+    /* Cell content styling */
+
+    .red {
+
+      color: red;
+
+    }
+
+    
+
+    .blue {
+
+      color: blue;
+
+    }
+
+    
+
+    .green {
+
+      color: green;
+
+    }
+
+    /* Responsive table styles */
+
+    @media only screen and (max-width: 600px) {
+
+      table, thead, tbody, th, td, tr {
+
+        display: block;
+
+      }
+
+      
+
+      thead tr {
+
+        position: absolute;
+
+        top: -9999px;
+
+        left: -9999px;
+
+      }
+
+      
+
+      tr {
+
+        border: 1px solid #ccc;
+
+      }
+
+      
+
+      td {
+
+        border: none;
+
+        border-bottom: 1px solid #eee;
+
+        position: relative;
+
+        padding-left: 50%;
+
+        white-space: nowrap;
+
+      }
+
+      
+
+      td:before {
+
+        position: absolute;
+
+        top: 6px;
+
+        left: 6px;
+
+        width: 45%;
+
+        padding-right: 10px;
+
+        white-space: nowrap;
+
+      }
+
+      /* Adjust the content based on cell index */
+
+      td:nth-of-type(1):before { content: "Column 1: "; }
+
+      td:nth-of-type(2):before { content: "Column 2: "; }
+
+      td:nth-of-type(3):before { content: "Column 3: "; }
+
+    }
+
+  </style>
+
+</head>
+
+<body>
+
+<!-- Responsive table -->
+
+<table>
+
+  <caption>Responsive Table</caption>
+
+  <thead>
+
+    <tr>
+
+      <th>Column 1</th>
+
+      <th>Column 2</th>
+
+      <th>Column 3</th>
+
+    </tr>
+
+  </thead>
+
+  <tbody>
+
+    <tr>
+
+      <td class="red">Red</td>
+
+      <td class="blue">Blue</td>
+
+      <td class="green">Green</td>
+
+    </tr>
+
+    <tr>
+
+      <td class="blue">Blue</td>
+
+      <td class="green">Green</td>
+
+      <td class="red">Red</td>
+
+    </tr>
+
+    <tr>
+
+      <td class="green">Green</td>
+
+      <td class="red">Red</td>
+
+      <td class="blue">Blue</td>
+
+    </tr>
+
+    <tr>
+
+      <td class="red">Red</td>
+
+      <td class="green">Green</td>
+
+      <td class="blue">Blue</td>
+
+    </tr>
+
+    <tr>
+
+      <td class="blue">Blue</td>
+
+      <td class="red">Red</td>
+
+      <td class="green">Green</td>
+
+    </tr>
+
+  </tbody>
+
+</table>
+
+</body>
+
+</html>
