@@ -1,0 +1,507 @@
+Lecture 3 Part 1: 
+Welcome to Lecture 3 Part 1! In this session, we will delve into the world of Cascading Style Sheets (CSS), a powerful tool for enhancing the visual appeal and layout of webpages. Let's get started with the basics.
+
+What is CSS?
+CSS stands for Cascading Style Sheets. 
+It is a styling language used to format the layout of a webpage. 
+With CSS, you can control various aspects such as color, font, text size, spacing, positioning of elements, and more.
+
+CSS follows the cascading principle, where styles applied to a parent element are inherited by its children. This means that a style applied to a higher-level element will affect all the nested elements unless overridden.
+
+Ways to Use CSS
+
+CSS can be added to HTML documents in three ways:
+
+Inline
+Applying styles directly within HTML elements using the `style` attribute.
+   <h1 style="color: blue;">A Blue Heading</h1>
+  	   <p style="color: red;">A red paragraph.</p>
+   
+Internal
+Defining styles within the `<head>` section of an HTML page using the `<style>` element.
+   <!DOCTYPE html>
+   <html>
+   <head>
+    	   <style>
+body {background-color: powderblue;}
+     		  h1   {color: blue;}
+     		  p    {color: red;}
+     </style>
+   </head>
+ 	  <body>
+ 	    <h1>This is a heading</h1>
+ 	    <p>This is a paragraph.</p>
+ 	  </body>
+ 	  </html>
+   
+
+External
+Linking to an external CSS file using the `<link>` element.
+   <!DOCTYPE html>
+   <html>
+   <head>
+     <link rel="stylesheet" href="styles.css">
+   </head>
+   <body>
+     <h1>This is a heading</h1>
+     <p>This is a paragraph.</p>
+   </body>
+   </html>
+
+CSS Colors, Fonts, and Sizes
+
+Let's explore some commonly used CSS properties related to colors, fonts, and sizes:
+
+The CSS color property defines the text color to be used.
+
+The CSS font-family property defines the font to be used.
+
+The CSS font-size property defines the text size to be used.
+
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+h1 {
+  color: blue;
+  font-family: verdana;
+  font-size: 300%;
+}
+p {
+  color: red;
+  font-family: courier;
+  font-size: 160%;
+}
+</style>
+</head>
+<body>
+<h1>This is a heading</h1>
+<p>This is a paragraph.</p>
+</body>
+</html>
+
+
+CSS Border, Padding, and Margin
+
+CSS allows us to define borders, padding, and margin for HTML elements:
+
+p {
+  border: 2px solid powderblue;
+  padding: 30px;
+  margin: 50px;
+}
+
+These properties control the appearance, space inside, and space outside the border of an element.
+
+CSS Formatting Elements:
+
+<small>` Element
+   The `<small>` element defines smaller text.
+    <small>This is some smaller text.</small>
+<mark>` Element
+   The `<mark>` element defines text that should be marked or highlighted.
+   <p>Do not forget to buy <mark>milk</mark> today.</p>
+<del>` and `<ins>` Elements
+   - The `<del>` element defines text that has been deleted from a document.
+   - The `<ins>` element defines text that has been inserted into a document.
+   <p>My favorite color is <del>blue</del> <ins>red</ins>.</p>
+<sub>` and `<sup>` Elements
+   - The `<sub>` element defines subscript text.
+   - The `<sup>` element defines superscript text.
+   <p>This is <sub>subscripted</sub> text.</p>
+   <p>This is <sup>superscripted</sup> text.</p>
+
+Quotation and Citation Elements:**
+   - `<blockquote>` for Quotations.
+   - `<q>` for Short Quotations.
+   <blockquote cite="http://www.worldwildlife.org/who/index.html">
+     For 60 years, WWF has worked to help people and nature thrive...
+   </blockquote>
+   <p>WWF's goal is to: <q>Build a future where people live in harmony with nature.</q></p>
+
+<abbr>` for Abbreviations
+   The `<abbr>` tag defines an abbreviation or an acronym.
+   <p>The <abbr title="World Health Organization">WHO</abbr> was founded in 1948.</p>
+<cite>` for Work Title
+   The `<cite>` tag defines the title of a creative work.
+   <p><cite>The Scream</cite> by Edvard Munch. Painted in 1893.</p>
+
+That wraps up our exploration of advanced CSS formatting elements. Now, it's time for activities to reinforce your learning. Stay engaged and keep coding!
+
+Activity 10: 
+Create a Table!
+
+In this activity, you will practice creating an HTML table using the provided CSS rules. Follow the instructions below:
+
+1. Open your preferred text editor or HTML editor.
+2. Copy and paste the following HTML code into your document:
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Stylish Table Activity</title>
+  <style>
+    /* Add your CSS styles here */
+    /* Example: Set the background color of even rows */
+    tr:nth-child(even) {
+      background-color: #D6EEEE;
+    }
+
+    /* Your additional styles go here */
+
+  </style>
+</head>
+<body>
+
+<!-- Your table content goes here -->
+<table>
+  <tr>
+    <th>Column 1</th>
+    <th>Column 2</th>
+    <th>Column 3</th>
+  </tr>
+  <tr>
+    <td>Data 1</td>
+    <td>Data 2</td>
+    <td>Data 3</td>
+  </tr>
+  <!-- Add more rows as needed -->
+
+</table>
+
+</body>
+</html>
+
+
+3. Add your CSS styles to enhance the appearance of the table. You can use the provided CSS rules as a starting point and add more styles to make the table visually appealing.
+4. Experiment with borders, background colors, and other CSS properties to create a unique and stylish design.
+5. Save your HTML file and open it in a web browser to see the result.
+
+Activity 9:
+Quiz! What did you learn?
+
+How do you set the background color of every even row in an HTML table using CSS?
+`tr:even { background-color: #F0F0F0; }`
+`tr:nth-child(odd) { background-color: #F0F0F0; }`
+`tr:nth-child(even) { background-color: #F0F0F0; }`
+
+The `colspan` attribute is used to make a cell span over multiple columns.
+True
+False
+
+To make a table cell span over multiple rows, you use the ________ attribute.
+Rowspan
+Colspan
+Childspan
+Cellspan
+
+What is the purpose of the CSS property `border-collapse` in the context of HTML tables?
+Adds a border around each cell.
+Merges adjacent cell borders into a single border.
+Adds extra space between cell borders.
+
+The `<caption>` tag in HTML is used to define a table caption.
+True
+False
+
+To create rounded corners for table borders, you use the CSS property ________.
+Edge-radius
+Border-radius
+Corner-radius
+Round-radius
+
+Which CSS selector is used to style table headers?
+`td`
+`th`
+`tr`
+
+The `border-spacing` property in CSS is used to adjust the space between table cells.
+True
+False
+
+To set the width of a table column, use the CSS property ________ on the `<th>` or `<td>` element.
+Length
+Width
+Height
+Column
+
+How can you make a table row change its background color when a user hovers over it?
+`tr:hover { background-color: #CCCCCC; }`
+`tr.mouseover { background-color: #CCCCCC; }`
+`table:hover tr { background-color: #CCCCCC; }`
+
+
+
+Great job on completing Lecture 3 Part 1! In our next part, we'll introduce Cascading Style Sheets (CSS) to take your styling skills to the next level. CSS provides even more control over the appearance and layout of webpages. Stay enthusiastic and keep coding!
+
+Lecture 3 Part 2: 
+Welcome back! In this session, we'll dive into advanced HTML table features and explore ways to enhance the visual appeal of tables through CSS styling.
+
+Play with the highlighted numbers in the lecture. Make them bigger and smaller and see what happens
+
+HTML Tables with Borders
+
+Tables can have borders of different styles and shapes. Here's how you can add and style borders:
+
+table, th, td {
+  border: 1px solid black;
+}
+
+To avoid double borders, set the `border-collapse` property to collapse:
+
+table, th, td {
+  border: 1px solid black;
+  border-collapse: collapse;
+}
+
+
+Style the borders for a more appealing look:
+
+table, th, td {
+  border: 1px solid white;
+  border-collapse: collapse;
+}
+
+th, td {
+  background-color: #96D4D4;
+}
+
+
+Round the table borders with the `border-radius` property:
+
+table, th, td {
+  border: 1px solid black;
+  border-radius: 10px;
+}
+
+Dotted table borders with the `border-style` property:
+
+th, td {
+  border-style: dotted;
+}
+
+Set the border color with the `border-color` property:
+
+th, td {
+  border-color: #96D4D4;
+}
+
+HTML Table Sizes
+
+Adjust the size of a table, row, or column using the `style` attribute:
+
+<table style="width:100%">
+  <!-- ... -->
+</table>
+
+<th style="width:70%">First Column</th>
+
+Set row height:
+
+<tr style="height:200px">
+  <!-- ... -->
+</tr>
+
+
+HTML Table Headers
+
+Define headers with the `<th>` element:
+
+<table>
+  <tr>
+    <th>Firstname</th>
+    <th>Lastname</th>
+    <th>Age</th>
+  </tr>
+  <!-- ... -->
+</table>
+
+Align table headers:
+
+th {
+  text-align: left;
+}
+
+Create headers spanning multiple columns:
+
+<th colspan="2">Name</th>
+
+
+Add a caption to the table:
+
+<table style="width:100%">
+  <caption>Monthly savings</caption>
+  <!-- ... -->
+</table>
+Play with the highlighted number
+
+
+
+HTML Table Padding & Spacing
+
+How to adjust cell padding:
+
+th, td {
+  padding: 15px;
+}
+Play with the highlighted number
+
+Change cell spacing:
+
+```css
+table {
+  border-spacing: 30px;}
+
+
+HTML Table Colspan & Rowspan
+
+Use `colspan` and `rowspan` attributes to make cells span multiple rows or columns:
+
+<th colspan="2">Name</th>
+<td rowspan="2">555-1234</td>
+
+
+CSS Styling for Better Tables
+
+Create zebra stripes for better readability:
+
+tr:nth-child(even) {
+  background-color: #D6EEEE;
+}
+
+Zebra stripes for columns:
+
+td:nth-child(even), th:nth-child(even) {
+  background-color: #D6EEEE;
+}
+
+
+Combine horizontal and vertical zebra stripes:
+
+tr:nth-child(even) {
+  background-color: rgba(150, 212, 212, 0.4);
+}
+
+th:nth-child(even), td:nth-child(even) {
+  background-color: rgba(150, 212, 212, 0.4);
+}
+
+Add horizontal dividers:
+
+tr {
+  border-bottom: 1px solid #ddd;
+}
+
+Make tables hoverable:
+
+tr:hover {
+  background-color: #D6EEEE;
+}
+
+
+Congratulations! You've now explored advanced HTML table features and learned how to style tables using CSS. Feel free to experiment with these techniques and make your tables visually appealing. Stay tuned for more web development insights in our next lecture!
+
+Activity 11:
+Quiz: Test Your HTML and CSS Knowledge
+1. What CSS property is used to set the border of a table, table cells, and table headers to a solid black line?
+   
+   a) border-style  
+   b) border-color  
+   c) border  
+   d) border-collapse  
+
+2. How can you prevent double borders between table cells?
+
+   a) Set border-style to none  
+   b) Set border-collapse to collapse  
+   c) Set border-spacing to 0  
+   d) Set border to 1px solid white  
+
+3. Which CSS property is used to style the background color of table headers and cells?
+
+   a) background  
+   b) background-color  
+   c) color  
+   d) bgcolor  
+
+4. How can you round the borders of a table?
+
+   a) Using border-style: round  
+   b) Using border-radius  
+   c) Using border-curve  
+   d) Using border-round  
+
+5. What CSS property is used to set dotted borders for table cells?
+
+   a) border-style: dotted  
+   b) border-line: dotted  
+   c) border-dotted: true  
+   d) border-type: dotted  
+
+6. How can you adjust the width of a table to fill the entire page?
+
+   a) <table style="width: 100%">  
+   b) <table width="100%">  
+   c) <table style="width: fill">  
+   d) <table width="fill">  
+
+7. Which HTML element is used to define table headers?
+
+   a) <th>  
+   b) <td>  
+   c) <tr>  
+   d) <table>  
+
+8. What CSS property is used to align text within table headers?
+
+   a) text-align  
+   b) align  
+   c) header-align  
+   d) th-align  
+
+9. How can you make a table row taller?
+
+   a) Using the height attribute on <tr>  
+   b) Using the style attribute on <tr>  
+   c) Using the row-height property in CSS  
+   d) Using the size attribute on <tr>  
+
+10. Which attribute is used to make a table cell span multiple rows or columns?
+
+    a) cellspan  
+    b) colspan  
+    c) rowspan  
+    d) cellspan  
+
+Answers:
+1. c) border  
+2. b) Set border-collapse to collapse  
+3. b) background-color  
+4. b) Using border-radius  
+5. a) border-style: dotted  
+6. a) <table style="width: 100%">  
+7. a) <th>  
+8. a) text-align  
+9. b) Using the style attribute on <tr>  
+10. c) rowspan  
+
+
+
+Activity 12:
+ Create Your Styled Table
+Objective: Apply the concepts learned in the lecture to create a visually appealing table.
+Instructions:
+Open your preferred code editor or use an online HTML/CSS editor.
+Create an HTML document with a table containing at least 5 rows and 3 columns.
+Apply styling to your table using CSS. Experiment with borders, background colors, and padding to make it visually interesting.
+Share your code or a screenshot of your styled table in the class discussion forum for feedback.
+Activity 13: 
+Responsive Table Design
+Objective: Implement responsive design principles to make your table adapt to different screen sizes.
+Instructions:
+Modify your existing HTML table to be responsive.
+Use CSS media queries to adjust the styling or layout of the table for smaller screens.
+Test your responsive table by resizing the browser window to see how it adapts.
+Share your updated code or screenshots showcasing your responsive table in the class discussion forum.
